@@ -15,6 +15,24 @@ ConnectMeNow is designed exclusively for macOS users. It takes advantage of macO
 Please note that this script is not compatible with other operating systems.
 
 
+## Granting Keychain Access
+
+To allow `osascript` to access the keychain and retrieve stored Wi-Fi passwords, follow these steps:
+
+1. Open the "Keychain Access" application on your macOS.
+
+2. Select the "Login" keychain on the left sidebar.
+
+3. Search for the Keychain (Wi-Fi Name) that contains the Wi-Fi password and Select it.
+
+3. Select the "Access Control" tab.
+
+4. Click the "+" button to add an application to the list.
+
+5. Navigate to `/usr/bin/osascript` and select it.
+
+6. Click "Add" to grant `osascript` access to the keychain items.
+
 ## Getting Started
 
 To get started with ConnectMeNow on macOS, follow these simple steps:
