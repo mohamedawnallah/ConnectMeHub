@@ -45,21 +45,10 @@ You can configure ConnectMeNow to run periodically using the crontab. Here's an 
 crontab -e
 ```
 3. Add the following line to run ConnectMeNow every minute:
-```
-* * * * * osascript $HOME/Desktop/apple_scripts/ConnectMeNow.scpt
-```
-
-Sure, you can update the README to specify that users can customize the cron schedule as needed. Here's the updated section:
-
-markdown
-Copy code
-## Running Periodically with Crontab
-
-You can configure ConnectMeNow to run periodically using the crontab. To do this, add the following line to your crontab configuration:
-
 ```bash
-* * * * * osascript $HOME/Desktop/apple_scripts/ConnectMeNow.scpt
+* * * * * osascript path/to/ConnectMeNow.scpt
 ```
+
 This schedule runs ConnectMeNow every minute. However, you can customize the cron schedule to match your specific needs. The format for the cron schedule is as follows:
 
 - The five asterisks (*) represent the minute, hour, day of the month, month, and day of the week fields, respectively.
@@ -78,4 +67,4 @@ ConnectMeNow simplifies the process of connecting to preferred Wi-Fi networks on
 Contributions to ConnectMeNow are welcome! If you have suggestions for improvements, new features, or would like to add support for other operating systems (such as Windows, Ubuntu, etc.), please open an issue or submit a pull request. 
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE]() file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
