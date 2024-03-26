@@ -1,6 +1,6 @@
-# ConnectMeNow
+# ConnectMeHub
 
-ConnectMeNow is an open-source project designed exclusively for macOS users, simplifying Wi-Fi network management on this platform. It allows macOS users to seamlessly connect to specified Wi-Fi networks, ensuring a reliable and hassle-free network experience.
+ConnectMeHub is an open-source project designed exclusively for macOS users, simplifying Wi-Fi network management on this platform. It allows macOS users to seamlessly connect to specified Wi-Fi networks, ensuring a reliable and hassle-free network experience.
 
 ## Features
 
@@ -10,7 +10,7 @@ ConnectMeNow is an open-source project designed exclusively for macOS users, sim
 
 ## macOS Compatibility
 
-ConnectMeNow is designed exclusively for macOS users. It takes advantage of macOS-specific features to simplify Wi-Fi network management on this platform.
+ConnectMeHub is designed exclusively for macOS users. It takes advantage of macOS-specific features to simplify Wi-Fi network management on this platform.
 
 Please note that this script is not compatible with other operating systems.
 
@@ -35,11 +35,11 @@ To allow `osascript` to access the keychain and retrieve stored Wi-Fi passwords,
 
 ## Getting Started
 
-To get started with ConnectMeNow on macOS, follow these simple steps:
+To get started with ConnectMeHub on macOS, follow these simple steps:
 
 1. Clone the repository to your local machine.
 ```bash
-git clone https://github.com/mohamedawnallah/ConnectMeNow.git
+git clone https://github.com/mohamedawnallah/ConnectMeHub.git
 ```
 2. Open the project in your favorite code editor or script runner.
 3. Customize the network configurations in the script by modifying the `mainNetworkSSIDs` and `backupNetworkSSIDs` properties. For example:
@@ -52,37 +52,37 @@ property backupNetworkSSIDs : {"BackupNetwork"}
 ```
 Run the script by executing the main() function.
 ```bash
-osascript ConnectMeNow.scpt
+osascript ConnectMeHub.scpt
 ```
 
 ## Running Periodically with Crontab
-You can configure ConnectMeNow to run periodically using the crontab. Here's an example of how to set it up:
+You can configure ConnectMeHub to run periodically using the crontab. Here's an example of how to set it up:
 1. Open Terminal on your macOS.
 2. Open your crontab configuration by running:
 ```bash
 crontab -e
 ```
-3. Add the following line to run ConnectMeNow every minute:
+3. Add the following line to run ConnectMeHub every minute:
 ```bash
-* * * * * osascript path/to/ConnectMeNow.scpt
+* * * * * osascript path/to/ConnectMeHub.scpt
 ```
 
-This schedule runs ConnectMeNow every minute. However, you can customize the cron schedule to match your specific needs. The format for the cron schedule is as follows:
+This schedule runs ConnectMeHub every minute. However, you can customize the cron schedule to match your specific needs. The format for the cron schedule is as follows:
 
 - The five asterisks (*) represent the minute, hour, day of the month, month, and day of the week fields, respectively.
-- You can adjust the values in these fields to determine when ConnectMeNow runs.
+- You can adjust the values in these fields to determine when ConnectMeHub runs.
 - Refer to the [Crontab documentation](https://manpages.debian.org/stretch/cron/crontab.5.en.html) for more information on customizing your cron schedule.
 
 After customizing your schedule, save and exit the crontab configuration to apply the changes.
 
-ConnectMeNow will now run according to your specified schedule, automatically managing your Wi-Fi connections at the desired intervals.
+ConnectMeHub will now run according to your specified schedule, automatically managing your Wi-Fi connections at the desired intervals.
 
 ## Usage
-ConnectMeNow simplifies the process of connecting to preferred Wi-Fi networks on macOS. It automatically detects the current network and switches to a specified network if available. If no suitable network is found, it displays a notification.
+ConnectMeHub simplifies the process of connecting to preferred Wi-Fi networks on macOS. It automatically detects the current network and switches to a specified network if available. If no suitable network is found, it displays a notification.
 
 
 ## Contributing
-Contributions to ConnectMeNow are welcome! If you have suggestions for improvements, new features, or would like to add support for other operating systems (such as Windows, Ubuntu, etc.), please open an issue or submit a pull request. 
+Contributions to ConnectMeHub are welcome! If you have suggestions for improvements, new features, or would like to add support for other operating systems (such as Windows, Ubuntu, etc.), please open an issue or submit a pull request. 
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
